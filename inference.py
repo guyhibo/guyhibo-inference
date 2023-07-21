@@ -1,4 +1,5 @@
 from model8 import Lipreading
+from get_checkpoint_update import get_checkpoint_dir
 import torch
 import cv2
 from torchvision import transforms
@@ -43,6 +44,7 @@ def make_input_tensor(video_path):
     return input_sequence, video_name, total_frame_ct
 
 video_path = "bf2c632e-6641-4ff7-a905-7f8d9a64ea80_preprocessed.mp4"
+get_checkpoint_dir()
 
 with torch.no_grad():
     model = Lipreading()
