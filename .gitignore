@@ -1,0 +1,5 @@
+*.webm
+*.mp4
+.DS_Store
+__pycache__
+ckpt
